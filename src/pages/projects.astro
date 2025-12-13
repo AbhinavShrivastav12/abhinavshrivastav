@@ -1,12 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ProjectSection from "../components/ProjectSection.astro"
-import Navbar from "../components/Navbar.astro";
+import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
     <Navbar />
-    <ProjectSection />
+    <ProjectSection client:load/>
     <Footer />
 </Layout>
