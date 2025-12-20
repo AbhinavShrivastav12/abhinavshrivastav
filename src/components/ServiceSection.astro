@@ -1,0 +1,48 @@
+---
+import { FaLaptopCode, FaPaintBrush, FaSearch } from "react-icons/fa";
+---
+
+<section id="services" class="py-24 bg-slate-900">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Our Services</h2>
+      <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+        We provide innovative solutions to help your business grow.
+      </p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Web Development -->
+      <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl text-center hover:scale-105 transition-transform duration-300 shadow-xl">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 rounded-full bg-gradient-to-r from-primary to-secondary text-white text-2xl">
+          <FaLaptopCode size={32} />
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Web Development</h3>
+        <p class="text-gray-300">
+          Building fast, responsive, and SEO-friendly websites using modern technologies.
+        </p>
+      </div>
+
+      <!-- UI Design -->
+      <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl text-center hover:scale-105 transition-transform duration-300 shadow-xl">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 rounded-full bg-gradient-to-r from-primary to-secondary text-white text-2xl">
+          <FaPaintBrush size={32} />
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">UI/UX Design</h3>
+        <p class="text-gray-300">
+          Creating visually stunning interfaces that provide an intuitive user experience.
+        </p>
+      </div>
+
+      <!-- Research -->
+      <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl text-center hover:scale-105 transition-transform duration-300 shadow-xl">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 rounded-full bg-gradient-to-r from-primary to-secondary text-white text-2xl">
+          <FaSearch size={32} />
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Research</h3>
+        <p class="text-gray-300">
+          In-depth research and analysis to deliver data-driven solutions and strategies.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
