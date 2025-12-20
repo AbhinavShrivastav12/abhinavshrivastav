@@ -2,11 +2,13 @@
 import Footer from "../components/Footer.astro";
 import HomeSection from "../components/HomeSection.astro";
 import Navbar from "../components/Navbar.jsx";
+import ServiceSection from "../components/ServiceSection.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
 	<Navbar  client:load/>
 	<HomeSection />
+	 <ServiceSection/>
 	<Footer />
 </Layout>

@@ -19,20 +19,23 @@ export default function Navbar() {
               <a href="/" className="text-white hover:text-primary transition-colors">
                 Home
               </a>
-              <a href="/about-me" className="text-white hover:text-primary transition-colors">
-                About
+              <a href="#services" className="text-white hover:text-primary transition-colors">
+                Services
               </a>
-              <a href="/projects" className="text-white hover:text-primary transition-colors">
-                Projects
+              <a href="/about-us" className="text-white hover:text-primary transition-colors">
+                About Us
               </a>
-              <a href="/contact-me" className="text-white hover:text-primary transition-colors">
+              <a href="/works" className="text-white hover:text-primary transition-colors">
+                Works
+              </a>
+              <a href="/contact-us" className="text-white hover:text-primary transition-colors">
                 Contact
               </a>
               <button
-                onClick={() => (window.location.href = "/contact-me")}
+                onClick={() => (window.location.href = "/contact-us")}
                 className="bg-primary hover:bg-secondary text-white px-6 py-2 !rounded-button whitespace-nowrap transition-all cursor-pointer"
               >
-                Hire Me
+                Hire
               </button>
             </div>
 
@@ -58,11 +61,12 @@ export default function Navbar() {
         {/* Sidebar Links */}
         <div className="flex flex-col space-y-6 px-6 mt-10 text-lg">
           <a href="/" className="hover:text-primary" onClick={() => setSidebarOpen(false)}>Home</a>
-          <a href="/about-me" className="hover:text-primary" onClick={() => setSidebarOpen(false)}>About</a>
-          <a href="/projects" className="hover:text-primary" onClick={() => setSidebarOpen(false)}>Projects</a>
-          <a href="/contact-me" className="hover:text-primary" onClick={() => setSidebarOpen(false)}>Contact</a>
+          <a href="/about-us" className="hover:text-primary" onClick={() => setSidebarOpen(false)}>About Us</a>
+          <a href="/works" className="hover:text-primary" onClick={() => setSidebarOpen(false)}>Works</a>
+          <a href="/contact-us" className="hover:text-primary" onClick={() => setSidebarOpen(false)}>Contact</a>
+          <a href="#services" className="hover:text-primary" onClick={() => setSidebarOpen(false)}>Services</a>
           <button
-            onClick={() => { window.location.href = "/contact-me"; setSidebarOpen(false); }}
+            onClick={() => { window.location.href = "/contact-us"; setSidebarOpen(false); }}
             className="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-button whitespace-nowrap transition-all"
           >
             Hire Me

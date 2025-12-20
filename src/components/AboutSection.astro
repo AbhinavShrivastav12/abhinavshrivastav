@@ -1,96 +1,72 @@
 ---
-import { FaRegUser } from "react-icons/fa"
-import { FaCloudDownloadAlt } from "react-icons/fa"
-import { AiOutlineHtml5 } from "react-icons/ai"
-import { GrCss3  } from "react-icons/gr"
-import { RiNodejsLine  } from "react-icons/ri"
-import { RiReactjsLine  } from "react-icons/ri"
-import { RiNextjsLine  } from "react-icons/ri"
-import { SiTailwindcss  } from "react-icons/si"
+import { FaRegBuilding } from "react-icons/fa";
+import { FaCloudDownloadAlt } from "react-icons/fa";
+import { AiOutlineHtml5 } from "react-icons/ai";
+import { GrCss3 } from "react-icons/gr";
+import { RiNodejsLine, RiReactjsLine, RiNextjsLine } from "react-icons/ri";
+import { SiTailwindcss } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { IoLogoNodejs } from "react-icons/io5";
+
+const orgName = "Abhinav Web Studio";
+const orgDescription = "We are a web development company that specializes in creating custom websites for small businesses and individuals.";
+
+const skills = [
+  { name: "HTML5", icon: AiOutlineHtml5, color: "#f97316" },
+  { name: "CSS3", icon: GrCss3, color: "#3b82f6" },
+  { name: "JavaScript", icon: RiNodejsLine, color: "#ecc94b" },
+  { name: "React", icon: RiReactjsLine, color: "#00b8db" },
+  { name: "Next.js", icon: RiNextjsLine, color: "#0F172A" },
+  { name: "Tailwind", icon: SiTailwindcss, color: "#00BBA7" },
+  { name: "Node.js", icon: IoLogoNodejs, color: "#3C873A" },
+  { name: "PostgreSQL", icon: BiLogoPostgresql, color: "#3b82f6" }
+];
 ---
-<section id="about" class="py-24  bg-slate-900 ">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">About Me</h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                    Passionate about creating digital experiences that make a difference
-                </p>
+
+<section id="about" class="py-24 bg-slate-900">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">About Us</h2>
+      <p class="text-xl text-gray-400 max-w-3xl mx-auto">{orgDescription}</p>
+    </div>
+
+    <!-- Card -->
+    <div class="glass rounded-3xl p-8 md:p-12 bg-white/80 backdrop-blur-sm border border-white/20 shadow-2xl">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        
+        <!-- Organization Info -->
+        <div class="text-center md:text-left">
+          <div class="w-48 h-48 mx-auto md:mx-0 mb-8 rounded-full bg-gradient-to-br from-primary to-secondary p-1">
+            <div class="w-full h-full rounded-full bg-slate-100 flex items-center justify-center">
+              <img src="/logo1.png" alt="Business Logo" class="w-46 h-46 rounded-full">
             </div>
-            <div class="glass rounded-3xl p-8 md:p-12 bg-white/80 backdrop-blur-sm border border-white/20 shadow-2xl">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div class="text-center md:text-left">
-                        <div class="w-48 h-48 mx-auto md:mx-0 mb-8 rounded-full bg-gradient-to-br from-primary to-secondary p-1">
-                            <div class="w-full h-full rounded-full bg-slate-100 flex items-center justify-center">
-                                <div class="w-6 h-6 flex items-center justify-center">
-                                    <FaRegUser  color="#334155" size={24} />
-                                </div>
-                            </div>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4">Abhinav Shrivastav</h3>
-                        <p class="text-gray-400 leading-relaxed">
-                            Based in Nepal, I'm a passionate full stack developer and UI designer with a year of experience crafting digital experiences. I specialize in building fast, SEO-optimized websites that not only look stunning but also drive real business results.
-                        </p>
-                        <a href="/Mr.-Abhinav-Shrivastav-Resume.pdf" class="mt-5 max-w-60 flex justify-around text-center bg-primary hover:bg-secondary text-white px-4 py-2 !rounded-button whitespace-nowrap transition-all cursor-pointer" download="Mr.-Abhinav-Shrivastav-Resume.pdf">
-                            <button>Download Resume</button>
-                            <span><FaCloudDownloadAlt size={24}/></span>
-                        </a>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-semibold text-white mb-6">Technical Skills</h4>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div class="neomorphism rounded-lg p-4 text-center card-hover">
-                                <div class="w-8 h-8 flex items-center justify-center mx-auto mb-2">
-                                    <AiOutlineHtml5 color="#f97316" size={24}/>
-                                </div>
-                                <span class="text-sm font-semibold text-slate-700">HTML5</span>
-                            </div>
-                            <div class="neomorphism rounded-lg p-4 text-center card-hover">
-                                <div class="w-8 h-8 flex items-center justify-center mx-auto mb-2">
-                                    <GrCss3 color="3b82f6" size={24}/>
-                                </div>
-                                <span class="text-sm font-semibold text-slate-700">CSS3</span>
-                            </div>
-                            <div class="neomorphism rounded-lg p-4 text-center card-hover">
-                                <div class="w-8 h-8 flex items-center justify-center mx-auto mb-2">
-                                    <RiNodejsLine color="#ecc94b" size= {24} />
-                                </div>
-                                <span class="text-sm font-semibold text-slate-700">JavaScript</span>
-                            </div>
-                            <div class="neomorphism rounded-lg p-4 text-center card-hover">
-                                <div class="w-8 h-8 flex items-center justify-center mx-auto mb-2">
-                                   <RiReactjsLine color="#00b8db" size={24} />
-                                </div>
-                                <span class="text-sm font-semibold text-slate-700">React</span>
-                            </div>
-                            <div class="neomorphism rounded-lg p-4 text-center card-hover">
-                                <div class="w-8 h-8 flex items-center justify-center mx-auto mb-2">
-                                   <RiNextjsLine color="#0F172A" size={24} />
-                                </div>
-                                <span class="text-sm font-semibold text-slate-700">Next.js</span>
-                            </div>
-                            <div class="neomorphism rounded-lg p-4 text-center card-hover">
-                                <div class="w-8 h-8 flex items-center justify-center mx-auto mb-2">
-                                    <SiTailwindcss   color= "#00BBA7" size={20} />
-                                </div>
-                                <span class="text-sm font-semibold text-slate-700">Tailwind</span>
-                            </div>
-                             <div class="neomorphism rounded-lg p-4 text-center card-hover">
-                                <div class="w-8 h-8 flex items-center justify-center mx-auto mb-2">
-                                    <IoLogoNodejs  color= "#00BBA7" size={20} />
-                                </div>
-                                <span class="text-sm font-semibold text-slate-700">Node.js</span>
-                            </div>
-                             <div class="neomorphism rounded-lg p-4 text-center card-hover ">
-                                <div class="w-8 h-8 flex items-center justify-center mx-auto mb-2" >
-                                    <BiLogoPostgresql   color= "#3b82f6" size={20} />
-                                </div>
-                                <span class="text-sm  font-semibold text-slate-700">PostgreSQL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4">{orgName}</h3>
+          <p class="text-gray-400 leading-relaxed">
+            {orgDescription} Our team specializes in web and app development, AI-driven Tech solutions, and empowering local communities through technology.
+          </p>
         </div>
-    </section>
+
+        <!-- Skills/Technologies -->
+        <div>
+          <h4 class="text-xl font-semibold text-white mb-6">Our Expertise</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {skills.map(skill => {
+              const Icon = skill.icon;
+              return (
+                <div class="neomorphism rounded-lg p-4 text-center card-hover">
+                  <div class="w-8 h-8 flex items-center justify-center mx-auto mb-2">
+                    <Icon color={skill.color} size={24} />
+                  </div>
+                  <span class="text-sm font-semibold text-slate-700">{skill.name}</span>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
